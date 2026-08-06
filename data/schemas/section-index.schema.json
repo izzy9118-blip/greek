@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/greek/schemas/section-index.schema.json",
+  "title": "Section Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sections"],
+  "properties": {
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "unit_id", "title", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^SEC-[0-9]{4}$"},
+          "unit_id": {"type": "string", "pattern": "^UNT-[0-9]{3}$"},
+          "textbook_label": {"type": ["string", "null"]},
+          "title": {"type": "string", "minLength": 1},
+          "status": {"enum": ["planned", "draft", "reviewed", "validated", "deprecated"]},
+          "objective_ids": {"type": "array", "items": {"type": "string", "pattern": "^OBJ-[0-9]{6}$"}, "uniqueItems": true, "default": []},
+          "source_page": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}
