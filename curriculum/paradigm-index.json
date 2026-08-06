@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "status": "draft",
+  "paradigms": [
+    {"id":"PAR-000001","unit_id":"UNT-001","section_id":"SEC-0014","title":"First-declension feminine noun in -η: τέχνη","path":"curriculum/units/UNT-001/paradigms.json"},
+    {"id":"PAR-000002","unit_id":"UNT-001","section_id":"SEC-0014","title":"First-declension feminine noun in -ᾱ: χώρα","path":"curriculum/units/UNT-001/paradigms.json"},
+    {"id":"PAR-000003","unit_id":"UNT-001","section_id":"SEC-0014","title":"First-declension ultima-accent noun: ψυχή","path":"curriculum/units/UNT-001/paradigms.json"},
+    {"id":"PAR-000004","unit_id":"UNT-001","section_id":"SEC-0015","title":"Second-declension masculine noun: λόγος","path":"curriculum/units/UNT-001/paradigms.json"},
+    {"id":"PAR-000005","unit_id":"UNT-001","section_id":"SEC-0015","title":"Second-declension neuter noun: ἔργον","path":"curriculum/units/UNT-001/paradigms.json"},
+    {"id":"PAR-000006","unit_id":"UNT-001","section_id":"SEC-0015","title":"Second-declension feminine noun: νῆσος","path":"curriculum/units/UNT-001/paradigms.json"},
+    {"id":"PAR-000007","unit_id":"UNT-001","section_id":"SEC-0016","title":"Greek definite article","path":"curriculum/units/UNT-001/paradigms.json"}
+  ]
+}
