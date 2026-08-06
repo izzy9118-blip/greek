@@ -13,7 +13,9 @@
   "unit_index_schema": "data/schemas/unit-index.schema.json",
   "section_index_schema": "data/schemas/section-index.schema.json",
   "learning_objective_schema": "data/schemas/learning-objective.schema.json",
-  "unit_ids": ["UNT-000"],
+  "unit_index": "curriculum/unit-index.json",
+  "section_index": "curriculum/section-index.json",
+  "unit_ids": ["UNT-000", "UNT-001"],
   "object_families": [
     "unit",
     "section",
