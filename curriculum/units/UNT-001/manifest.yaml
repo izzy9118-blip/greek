@@ -1,0 +1,240 @@
+id: UNT-001
+type: unit
+schema_version: 1.0.0
+status: draft
+number: 1
+title: Unit 1
+origin: source-derived
+source:
+  work: Greek: An Intensive Course
+  authors:
+    - Hardy Hansen
+    - Gerald M. Quinn
+  unit: 1
+  section: "Sections 13-17"
+  page: "17-36"
+  note: "Structural reconstruction from the uploaded textbook; no wholesale transcription."
+
+purpose: >-
+  Introduce the Greek noun system through gender, number, case, inflection,
+  first- and second-declension nouns, the definite article, and the role of
+  word order in an inflected language.
+
+prerequisite_unit_ids:
+  - UNT-000
+next_unit_ids:
+  - UNT-002
+
+section_ids:
+  - SEC-0013
+  - SEC-0014
+  - SEC-0015
+  - SEC-0016
+  - SEC-0017
+
+sections:
+  - id: SEC-0013
+    number: 13
+    title: "Nouns: Overview"
+    source_page_start: 17
+    source_page_end: 20
+    objective_ids:
+      - OBJ-000101
+      - OBJ-000102
+      - OBJ-000103
+  - id: SEC-0014
+    number: 14
+    title: "First-Declension Nouns (Nominative in -η or -ᾱ)"
+    source_page_start: 21
+    source_page_end: 24
+    objective_ids:
+      - OBJ-000104
+      - OBJ-000105
+  - id: SEC-0015
+    number: 15
+    title: "Second-Declension Nouns"
+    source_page_start: 24
+    source_page_end: 27
+    objective_ids:
+      - OBJ-000106
+      - OBJ-000107
+  - id: SEC-0016
+    number: 16
+    title: "The Article"
+    source_page_start: 27
+    source_page_end: 30
+    objective_ids:
+      - OBJ-000108
+      - OBJ-000109
+  - id: SEC-0017
+    number: 17
+    title: "Word Order"
+    source_page_start: 30
+    source_page_end: 30
+    objective_ids:
+      - OBJ-000110
+
+learning_objectives:
+  - id: OBJ-000101
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Identify noun gender and number
+    description: >-
+      Distinguish masculine, feminine, and neuter gender and singular, plural,
+      and the existence of the dual as grammatical categories.
+    skill_ids: [SKL-000101]
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000102
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Identify the five Greek cases
+    description: >-
+      Name and distinguish nominative, genitive, dative, accusative, and vocative.
+    skill_ids: [SKL-000102]
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000103
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Explain case function through inflection
+    description: >-
+      Explain how noun endings mark grammatical relations that English often
+      expresses through word order or prepositions.
+    skill_ids: [SKL-000103]
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000104
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Decline first-declension feminine nouns
+    description: >-
+      Produce and identify the singular and plural forms of first-declension
+      feminine nouns in -η and -ᾱ.
+    skill_ids: [SKL-000104]
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000105
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Apply persistent accent in first-declension forms
+    description: >-
+      Preserve or adjust noun accent according to the accent rules and the
+      special first-declension genitive plural ending.
+    skill_ids: [SKL-000105]
+    mastery_threshold: 0.85
+    origin: source-derived
+  - id: OBJ-000106
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Decline second-declension masculine and feminine nouns
+    description: >-
+      Produce and identify second-declension masculine and feminine forms.
+    skill_ids: [SKL-000106]
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000107
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Decline second-declension neuter nouns
+    description: >-
+      Produce and identify second-declension neuter forms and apply the rule
+      that nominative, accusative, and vocative are identical.
+    skill_ids: [SKL-000107]
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000108
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Decline the Greek definite article
+    description: >-
+      Identify and produce the article across gender, number, and case.
+    skill_ids: [SKL-000108]
+    mastery_threshold: 0.95
+    origin: source-derived
+  - id: OBJ-000109
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Recognize article-noun agreement and attributive position
+    description: >-
+      Identify agreement in gender, number, and case and recognize the principal
+      patterns of attributive position introduced in the unit.
+    skill_ids: [SKL-000109]
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000110
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Interpret Greek word order through inflection and emphasis
+    description: >-
+      Use inflection to identify grammatical relations and treat word order as
+      a potential marker of emphasis rather than as the sole marker of syntax.
+    skill_ids: [SKL-000110]
+    mastery_threshold: 0.85
+    origin: source-derived
+
+skill_ids:
+  - SKL-000101
+  - SKL-000102
+  - SKL-000103
+  - SKL-000104
+  - SKL-000105
+  - SKL-000106
+  - SKL-000107
+  - SKL-000108
+  - SKL-000109
+  - SKL-000110
+
+content_blocks:
+  vocabulary:
+    source_page_start: 31
+    source_page_end: 31
+  vocabulary_notes:
+    source_page_start: 31
+    source_page_end: 33
+  drills:
+    source_page_start: 34
+    source_page_end: 36
+  exercises:
+    source_page_start: 36
+    source_page_end: 38
+  reading_passage:
+    present: false
+    note: "The textbook begins readings from original Greek texts in Unit 4."
+
+vocabulary_ids: []
+grammar_rule_ids: []
+paradigm_ids: []
+exercise_ids: []
+reading_ids: []
+
+completion_requirements:
+  required_objective_ids:
+    - OBJ-000101
+    - OBJ-000102
+    - OBJ-000103
+    - OBJ-000104
+    - OBJ-000105
+    - OBJ-000106
+    - OBJ-000107
+    - OBJ-000108
+    - OBJ-000109
+    - OBJ-000110
+  requires_vocabulary_mastery: true
+  requires_declension_generation: true
+  requires_article_mastery: true
+  requires_case_function_explanation: true
+
+notes:
+  - "Section titles and printed page locations follow the uploaded textbook's table of contents and Unit 1 pages."
+  - "Vocabulary, paradigms, drills, and exercises will be assigned stable object identifiers in subsequent production units."
