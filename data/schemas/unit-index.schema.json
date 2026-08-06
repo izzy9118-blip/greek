@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/greek/schemas/unit-index.schema.json",
+  "title": "Unit Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "units"],
+  "properties": {
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "number", "title", "manifest", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^UNT-[0-9]{3}$"},
+          "number": {"type": "integer", "minimum": 0},
+          "title": {"type": "string", "minLength": 1},
+          "manifest": {"type": "string", "pattern": "^curriculum/units/UNT-[0-9]{3}/manifest\\.yaml$"},
+          "status": {"enum": ["planned", "draft", "reviewed", "validated", "deprecated"]},
+          "prerequisite_unit_ids": {"type": "array", "items": {"type": "string", "pattern": "^UNT-[0-9]{3}$"}, "uniqueItems": true, "default": []}
+        }
+      }
+    }
+  }
+}
