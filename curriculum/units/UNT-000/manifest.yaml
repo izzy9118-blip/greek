@@ -1,0 +1,132 @@
+id: UNT-000
+type: unit
+schema_version: 1.0.0
+status: draft
+number: 0
+title: Introduction and Foundations
+origin: source-derived
+source:
+  work: Greek: An Intensive Course
+  authors:
+    - Hardy Hansen
+    - Gerald M. Quinn
+  unit: null
+  section: introductory material preceding Unit 1
+  page: "front matter and introductory pages"
+  note: "Structured reconstruction from the uploaded textbook; no wholesale transcription."
+
+purpose: >-
+  Prepare the learner to begin Unit 1 by establishing the textbook's scope,
+  conventions, use pattern, and the basic orientation required for intensive
+  study of Ancient Greek.
+
+prerequisite_unit_ids: []
+next_unit_ids:
+  - UNT-001
+
+section_ids:
+  - SEC-0001
+  - SEC-0002
+  - SEC-0003
+  - SEC-0004
+
+sections:
+  - id: SEC-0001
+    title: Course scope and aims
+    textbook_label: Introduction
+    source_page: "introductory pages"
+    objective_ids:
+      - OBJ-000001
+  - id: SEC-0002
+    title: How to use the course
+    textbook_label: Introduction
+    source_page: "introductory pages"
+    objective_ids:
+      - OBJ-000002
+  - id: SEC-0003
+    title: Reference conventions and organization
+    textbook_label: Contents and introductory apparatus
+    source_page: "front matter"
+    objective_ids:
+      - OBJ-000003
+  - id: SEC-0004
+    title: Readiness for Unit 1
+    textbook_label: Transition to Unit 1
+    source_page: "immediately preceding Unit 1"
+    objective_ids:
+      - OBJ-000004
+
+learning_objectives:
+  - id: OBJ-000001
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Identify the course's object of study
+    description: >-
+      State that the course is an intensive introduction to Ancient Greek and
+      distinguish learning the language from merely consulting translations.
+    skill_ids:
+      - SKL-000001
+    mastery_threshold: 0.90
+    origin: editorial
+  - id: OBJ-000002
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Follow the prescribed study cycle
+    description: >-
+      Use presentation, memorization, drill, exercise, review, and reading as a
+      connected learning sequence rather than isolated activities.
+    skill_ids:
+      - SKL-000002
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000003
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Navigate the curriculum apparatus
+    description: >-
+      Locate units, numbered sections, paradigms, vocabulary, exercises,
+      reviews, readings, appendices, and reference material.
+    skill_ids:
+      - SKL-000003
+    mastery_threshold: 0.90
+    origin: source-derived
+  - id: OBJ-000004
+    type: learning_objective
+    schema_version: 1.0.0
+    status: draft
+    title: Demonstrate readiness to begin Unit 1
+    description: >-
+      Confirm access to a polytonic Greek input method, understand the program's
+      active-recall expectations, and complete the introductory orientation.
+    skill_ids:
+      - SKL-000004
+    mastery_threshold: 1.00
+    origin: editorial
+
+skill_ids:
+  - SKL-000001
+  - SKL-000002
+  - SKL-000003
+  - SKL-000004
+
+vocabulary_ids: []
+grammar_rule_ids: []
+paradigm_ids: []
+exercise_ids: []
+reading_ids: []
+
+completion_requirements:
+  required_objective_ids:
+    - OBJ-000001
+    - OBJ-000002
+    - OBJ-000003
+    - OBJ-000004
+  requires_greek_input_check: true
+  requires_textbook_navigation_check: true
+
+notes:
+  - "UNT-000 is repository-created scaffolding for the textbook's introductory material; the textbook itself does not label it Unit 0."
+  - "Detailed alphabet, pronunciation, accentuation, and grammar content must be assigned according to the textbook's actual numbered sequence rather than assumed here."
