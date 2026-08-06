@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/izzy9118-blip/greek/data/schemas/section.schema.json",
+  "title": "Greek Curriculum Section",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "schema_version", "status", "title", "source", "origin", "created_at", "updated_at", "number", "unit_id", "prerequisite_section_ids", "concept_ids", "rule_ids", "paradigm_ids"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^SEC-[0-9]{4}$"},
+    "type": {"const": "section"},
+    "schema_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status": {"enum": ["draft", "reviewed", "validated", "deprecated"]},
+    "title": {"type": "string", "minLength": 1},
+    "source": {"$ref": "#/$defs/source"},
+    "origin": {"enum": ["source-derived", "editorial", "generated"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "number": {"type": "integer", "minimum": 1},
+    "unit_id": {"type": "string", "pattern": "^UNT-[0-9]{3}$"},
+    "prerequisite_section_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^SEC-[0-9]{4}$"}},
+    "concept_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^CON-[0-9]{6}$"}},
+    "rule_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^GRM-[0-9]{6}$"}},
+    "paradigm_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^PAR-[0-9]{6}$"}}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["work", "unit", "section", "page"],
+      "properties": {
+        "work": {"const": "Hansen and Quinn, Greek: An Intensive Course"},
+        "unit": {"type": ["integer", "null"], "minimum": 0, "maximum": 20},
+        "section": {"type": ["integer", "null"], "minimum": 1},
+        "page": {"oneOf": [{"type": "integer", "minimum": 1}, {"type": "string", "pattern": "^[0-9]+(?:-[0-9]+)?$"}, {"type": "null"}]},
+        "note": {"type": "string"}
+      }
+    }
+  }
+}
