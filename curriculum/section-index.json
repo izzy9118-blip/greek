@@ -1,0 +1,17 @@
+{
+  "id": "SIDX-000001",
+  "type": "section_index",
+  "schema_version": "1.0.0",
+  "status": "draft",
+  "sections": [
+    {"id":"SEC-0001","unit_id":"UNT-000","number":null,"title":"Course scope and aims","origin":"editorial-scaffolding"},
+    {"id":"SEC-0002","unit_id":"UNT-000","number":null,"title":"How to use the course","origin":"editorial-scaffolding"},
+    {"id":"SEC-0003","unit_id":"UNT-000","number":null,"title":"Reference conventions and organization","origin":"editorial-scaffolding"},
+    {"id":"SEC-0004","unit_id":"UNT-000","number":null,"title":"Readiness for Unit 1","origin":"editorial-scaffolding"},
+    {"id":"SEC-0013","unit_id":"UNT-001","number":13,"title":"Nouns: Overview","printed_page_start":17,"printed_page_end":20,"origin":"source-derived"},
+    {"id":"SEC-0014","unit_id":"UNT-001","number":14,"title":"First-Declension Nouns (Nominative in -η or -ᾱ)","printed_page_start":21,"printed_page_end":24,"origin":"source-derived"},
+    {"id":"SEC-0015","unit_id":"UNT-001","number":15,"title":"Second-Declension Nouns","printed_page_start":24,"printed_page_end":27,"origin":"source-derived"},
+    {"id":"SEC-0016","unit_id":"UNT-001","number":16,"title":"The Article","printed_page_start":27,"printed_page_end":30,"origin":"source-derived"},
+    {"id":"SEC-0017","unit_id":"UNT-001","number":17,"title":"Word Order","printed_page_start":30,"printed_page_end":30,"origin":"source-derived"}
+  ]
+}
