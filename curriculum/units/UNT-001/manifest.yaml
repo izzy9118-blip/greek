@@ -20,17 +20,10 @@ purpose: >-
   first- and second-declension nouns, the definite article, and the role of
   word order in an inflected language.
 
-prerequisite_unit_ids:
-  - UNT-000
-next_unit_ids:
-  - UNT-002
+prerequisite_unit_ids: [UNT-000]
+next_unit_ids: [UNT-002]
 
-section_ids:
-  - SEC-0013
-  - SEC-0014
-  - SEC-0015
-  - SEC-0016
-  - SEC-0017
+section_ids: [SEC-0013, SEC-0014, SEC-0015, SEC-0016, SEC-0017]
 
 sections:
   - id: SEC-0013
@@ -156,17 +149,7 @@ learning_objectives:
     mastery_threshold: 0.85
     origin: source-derived
 
-skill_ids:
-  - SKL-000101
-  - SKL-000102
-  - SKL-000103
-  - SKL-000104
-  - SKL-000105
-  - SKL-000106
-  - SKL-000107
-  - SKL-000108
-  - SKL-000109
-  - SKL-000110
+skill_ids: [SKL-000101, SKL-000102, SKL-000103, SKL-000104, SKL-000105, SKL-000106, SKL-000107, SKL-000108, SKL-000109, SKL-000110]
 
 content_blocks:
   vocabulary:
@@ -180,6 +163,10 @@ content_blocks:
     source_page_start: 21
     source_page_end: 28
     data_path: curriculum/units/UNT-001/paradigms.json
+  grammar_rules:
+    source_page_start: 17
+    source_page_end: 30
+    data_path: curriculum/units/UNT-001/grammar-rules.json
   drills:
     source_page_start: 34
     source_page_end: 36
@@ -190,56 +177,14 @@ content_blocks:
     present: false
     note: "The textbook begins readings from original Greek texts in Unit 4."
 
-vocabulary_ids:
-  - VOC-000001
-  - VOC-000002
-  - VOC-000003
-  - VOC-000004
-  - VOC-000005
-  - VOC-000006
-  - VOC-000007
-  - VOC-000008
-  - VOC-000009
-  - VOC-000010
-  - VOC-000011
-  - VOC-000012
-  - VOC-000013
-  - VOC-000014
-  - VOC-000015
-  - VOC-000016
-  - VOC-000017
-  - VOC-000018
-  - VOC-000019
-  - VOC-000020
-  - VOC-000021
-  - VOC-000022
-  - VOC-000023
-  - VOC-000024
-  - VOC-000025
-grammar_rule_ids: []
-paradigm_ids:
-  - PAR-000001
-  - PAR-000002
-  - PAR-000003
-  - PAR-000004
-  - PAR-000005
-  - PAR-000006
-  - PAR-000007
+vocabulary_ids: [VOC-000001, VOC-000002, VOC-000003, VOC-000004, VOC-000005, VOC-000006, VOC-000007, VOC-000008, VOC-000009, VOC-000010, VOC-000011, VOC-000012, VOC-000013, VOC-000014, VOC-000015, VOC-000016, VOC-000017, VOC-000018, VOC-000019, VOC-000020, VOC-000021, VOC-000022, VOC-000023, VOC-000024, VOC-000025]
+grammar_rule_ids: [GRM-000001, GRM-000002, GRM-000003, GRM-000004, GRM-000005, GRM-000006, GRM-000007, GRM-000008, GRM-000009, GRM-000010, GRM-000011, GRM-000012, GRM-000013, GRM-000014, GRM-000015, GRM-000016, GRM-000017, GRM-000018, GRM-000019]
+paradigm_ids: [PAR-000001, PAR-000002, PAR-000003, PAR-000004, PAR-000005, PAR-000006, PAR-000007]
 exercise_ids: []
 reading_ids: []
 
 completion_requirements:
-  required_objective_ids:
-    - OBJ-000101
-    - OBJ-000102
-    - OBJ-000103
-    - OBJ-000104
-    - OBJ-000105
-    - OBJ-000106
-    - OBJ-000107
-    - OBJ-000108
-    - OBJ-000109
-    - OBJ-000110
+  required_objective_ids: [OBJ-000101, OBJ-000102, OBJ-000103, OBJ-000104, OBJ-000105, OBJ-000106, OBJ-000107, OBJ-000108, OBJ-000109, OBJ-000110]
   requires_vocabulary_mastery: true
   requires_declension_generation: true
   requires_article_mastery: true
@@ -247,4 +192,4 @@ completion_requirements:
 
 notes:
   - "Section titles and printed page locations follow the uploaded textbook's table of contents and Unit 1 pages."
-  - "Vocabulary and paradigms are registered; grammar rules, drills, and exercises remain pending later production units."
+  - "Vocabulary, paradigms, and grammar rules are registered; drills and exercises remain pending later production units."
