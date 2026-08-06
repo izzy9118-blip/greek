@@ -1,0 +1,26 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/izzy9118-blip/greek/data/schemas/paradigm.schema.json",
+  "title":"Greek Paradigm",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","type","schema_version","status","title","source","origin","created_at","updated_at","features","forms"],
+  "properties":{
+    "id":{"type":"string","pattern":"^PAR-[0-9]{6}$"},
+    "type":{"const":"paradigm"},
+    "schema_version":{"type":"string","pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status":{"enum":["draft","reviewed","validated","deprecated"]},
+    "title":{"type":"string","minLength":1},
+    "source":{"$ref":"#/$defs/source"},
+    "origin":{"enum":["source-derived","editorial","generated"]},
+    "created_at":{"type":"string","format":"date-time"},
+    "updated_at":{"type":"string","format":"date-time"},
+    "lemma_id":{"type":["string","null"],"pattern":"^VOC-[0-9]{6}$"},
+    "features":{"type":"object","minProperties":1,"additionalProperties":{"type":["string","number","boolean","null"]}},
+    "forms":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/form"}}
+  },
+  "$defs":{
+    "source":{"type":"object","additionalProperties":false,"required":["work","unit","section","page"],"properties":{"work":{"const":"Hansen and Quinn, Greek: An Intensive Course"},"unit":{"type":["integer","null"],"minimum":0,"maximum":20},"section":{"type":["integer","null"],"minimum":1},"page":{"oneOf":[{"type":"integer","minimum":1},{"type":"string","pattern":"^[0-9]+(?:-[0-9]+)?$"},{"type":"null"}]},"note":{"type":"string"}}},
+    "form":{"type":"object","additionalProperties":false,"required":["surface"],"properties":{"surface":{"type":"string","minLength":1},"stem":{"type":"string"},"ending":{"type":"string"},"case":{"enum":["nominative","genitive","dative","accusative","vocative",null]},"gender":{"enum":["masculine","feminine","neuter","common",null]},"number":{"enum":["singular","dual","plural",null]},"person":{"enum":["first","second","third",null]},"tense":{"enum":["present","imperfect","future","aorist","perfect","pluperfect","future-perfect",null]},"voice":{"enum":["active","middle","passive","middle-passive",null]},"mood":{"enum":["indicative","subjunctive","optative","imperative","infinitive","participle",null]},"accent_explanation":{"type":"string"},"alternate_forms":{"type":"array","items":{"type":"string"}},"notes":{"type":"array","items":{"type":"string"}}}}
+  }
+}
