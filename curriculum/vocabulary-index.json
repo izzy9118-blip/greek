@@ -1,0 +1,21 @@
+{
+  "id": "VIX-000001",
+  "type": "vocabulary_index",
+  "schema_version": "1.0.0",
+  "status": "draft",
+  "entry_schema": "data/schemas/vocabulary-entry.schema.json",
+  "packages": [
+    {
+      "unit_id": "UNT-001",
+      "path": "curriculum/units/UNT-001/vocabulary.json",
+      "entry_count": 25,
+      "entry_ids": [
+        "VOC-000001", "VOC-000002", "VOC-000003", "VOC-000004", "VOC-000005",
+        "VOC-000006", "VOC-000007", "VOC-000008", "VOC-000009", "VOC-000010",
+        "VOC-000011", "VOC-000012", "VOC-000013", "VOC-000014", "VOC-000015",
+        "VOC-000016", "VOC-000017", "VOC-000018", "VOC-000019", "VOC-000020",
+        "VOC-000021", "VOC-000022", "VOC-000023", "VOC-000024", "VOC-000025"
+      ]
+    }
+  ]
+}
