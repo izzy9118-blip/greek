@@ -1,0 +1,28 @@
+{
+  "id": "GRI-000001",
+  "type": "grammar_rule_index",
+  "schema_version": "1.0.0",
+  "status": "draft",
+  "title": "Greek Grammar Rule Index",
+  "entries": [
+    {"id":"GRM-000001","unit_id":"UNT-001","section_ids":["SEC-0013"],"title":"Greek nouns mark gender, number, and case","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000002","unit_id":"UNT-001","section_ids":["SEC-0013"],"title":"Inflection consists of stem and ending","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000003","unit_id":"UNT-001","section_ids":["SEC-0013"],"title":"Nominative case functions","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000004","unit_id":"UNT-001","section_ids":["SEC-0013"],"title":"Genitive case functions","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000005","unit_id":"UNT-001","section_ids":["SEC-0013"],"title":"Dative case functions","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000006","unit_id":"UNT-001","section_ids":["SEC-0013"],"title":"Accusative case functions","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000007","unit_id":"UNT-001","section_ids":["SEC-0013"],"title":"Vocative case function","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000008","unit_id":"UNT-001","section_ids":["SEC-0014","SEC-0015"],"title":"Derive a noun stem from the genitive singular","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000009","unit_id":"UNT-001","section_ids":["SEC-0014"],"title":"First-declension feminine patterns","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000010","unit_id":"UNT-001","section_ids":["SEC-0014"],"title":"First-declension genitive plural accent","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000011","unit_id":"UNT-001","section_ids":["SEC-0014","SEC-0015"],"title":"Persistent noun accent","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000012","unit_id":"UNT-001","section_ids":["SEC-0014","SEC-0015"],"title":"Final -αι and -οι count short for accent","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000013","unit_id":"UNT-001","section_ids":["SEC-0015"],"title":"Second-declension masculine and feminine pattern","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000014","unit_id":"UNT-001","section_ids":["SEC-0015"],"title":"Neuter nominative, accusative, and vocative identity","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000015","unit_id":"UNT-001","section_ids":["SEC-0015"],"title":"Neuter plural ending","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000016","unit_id":"UNT-001","section_ids":["SEC-0016"],"title":"Article agrees with its noun","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000017","unit_id":"UNT-001","section_ids":["SEC-0016"],"title":"Attributive position","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000018","unit_id":"UNT-001","section_ids":["SEC-0016"],"title":"Principal uses of the article in Unit 1","path":"curriculum/units/UNT-001/grammar-rules.json"},
+    {"id":"GRM-000019","unit_id":"UNT-001","section_ids":["SEC-0017"],"title":"Inflection permits flexible word order","path":"curriculum/units/UNT-001/grammar-rules.json"}
+  ]
+}
