@@ -1,0 +1,29 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/izzy9118-blip/greek/data/schemas/learner-attempt.schema.json",
+  "title":"Greek Learner Attempt",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","learner_id","item_id","started_at","submitted_at","response","score","maximum_score","feature_results","error_codes","hints_used"],
+  "properties":{
+    "id":{"type":"string","pattern":"^ATT-[0-9]{9}$"},
+    "learner_id":{"type":"string","minLength":1},
+    "item_id":{"type":"string","pattern":"^(ASM|EXR)-[0-9]{6}$"},
+    "started_at":{"type":"string","format":"date-time"},
+    "submitted_at":{"type":"string","format":"date-time"},
+    "response":{},
+    "score":{"type":"number","minimum":0},
+    "maximum_score":{"type":"number","exclusiveMinimum":0},
+    "feature_results":{"type":"object","additionalProperties":{"enum":["correct","incorrect","partial","omitted","not-scored"]}},
+    "error_codes":{"type":"array","uniqueItems":true,"items":{"type":"string","pattern":"^[A-Z][A-Z0-9_]*$"}},
+    "hints_used":{"type":"integer","minimum":0},
+    "duration_ms":{"type":"integer","minimum":0},
+    "metadata":{"type":"object"}
+  },
+  "allOf":[
+    {
+      "if":{"properties":{"score":{"type":"number"},"maximum_score":{"type":"number"}},"required":["score","maximum_score"]},
+      "then":{"properties":{"score":{"type":"number","minimum":0}}}
+    }
+  ]
+}
