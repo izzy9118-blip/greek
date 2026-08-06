@@ -1,0 +1,24 @@
+{
+  "id": "UIDX-000001",
+  "type": "unit_index",
+  "schema_version": "1.0.0",
+  "status": "draft",
+  "units": [
+    {
+      "id": "UNT-000",
+      "number": 0,
+      "title": "Introduction and Foundations",
+      "manifest": "curriculum/units/UNT-000/manifest.yaml",
+      "textbook_designation": null,
+      "origin": "editorial-scaffolding"
+    },
+    {
+      "id": "UNT-001",
+      "number": 1,
+      "title": "Unit 1",
+      "manifest": "curriculum/units/UNT-001/manifest.yaml",
+      "textbook_designation": "Unit 1",
+      "origin": "source-derived"
+    }
+  ]
+}
